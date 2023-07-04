@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mainHeader">Difference between Window and Document object</h1>
+        <p><b>Window</b> is the root of Javascript object,it is the global object in Javascript. The first thing that gets loaded into the browser is the window and the properties related to that window are stored in the window object. The window object provides an interface for the Javascript code to interact with the browser.
+        </p>
+        <ul class="listComp win">
+            <li><b>Window Object</b> is the top most and outer most element of the object Hierarchy as shown in the image below: <br>
+                <img src="img/window.jpg" alt="">
+            </li>
+            <li><b class="">Global Scope:</b> Variables and Functions declared in the global scope are attached to the window object which means you can access global variables using the "window" prefix such as <b>window.myVariable</b> or <b>window.myFunction().</b></li>
+            <li><b class="">DOM Manipulation:</b> The window object provides methods for manipulating the browser window, such as resizing the window, moving it, scrolling, getting the height and width of the window, getting the X and Y offsets, getting history object for the window</li>
+            <li><b>Navigation:</b> The window object provides methods for navigating the browser to different URLs, such as window.location.href, window.location.reload(), and window.open().</li>
+        </ul>
+        <p> <b>Document Object</b> is an object inside the Window that gets loaded inside it and we use a document object for manipulation inside the document. </p>
+        <ul class="listComp doc">
+            <li><b>DOM Manipulation:</b> The document object provides methods for interacting with the HTML structure of the document. One can access and manipulate elements, create new elements, modify attributes and styles, change text content, and more.</li>
+            <li><b>Element Selection:</b> The document object provides methods for selecting elements from the document using various selectors, such as getElementById(), getElementsByClassName(), getElementsByTagName(),querySelector() and querySelectorAll(). These methods allow you to retrieve specific elements or collections of elements based on your requirements.</li>
+            <li><b>Event Handling:</b> The document object enables event handling within the document. You can attach event listeners to elements and handle events like clicks, key presses, form submissions, and more by using methods like addEventListener(), removeEventListener() and more.</li>
+            <li><b>Document Properties:</b> The document object also has properties that provide information about the document, such as its title (document.title), URL, doctype, and more.</li>
+        </ul>
+        
+    </div>
+</body>
+</html>
